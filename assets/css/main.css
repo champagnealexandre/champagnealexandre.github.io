@@ -29,6 +29,26 @@ html {
   scrollbar-width: none; /* hides it entirely (no visible bar) */
 }
 
+/* insert figures with captions */
+.fig {
+  margin: 0;              /* no extra outer spacing */
+}
+
+.fig .image.main {
+  margin: 0;              /* kill any template margin on the image wrapper */
+}
+
+.fig img {
+  display: block;         /* removes baseline/descender gap under images */
+}
+
+.figcap {
+  margin: 5px;              /* no gap between figure and caption */
+  padding: 0;
+  text-align: right;
+  font-size: 10pt;
+  line-height: 1;         /* keeps it tight */
+}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -194,7 +214,7 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 2rem 0;
+		margin: 0 0 1rem 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
